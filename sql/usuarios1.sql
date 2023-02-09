@@ -1,0 +1,1 @@
+SELECT * FROM bdfstradu.usuarios1;

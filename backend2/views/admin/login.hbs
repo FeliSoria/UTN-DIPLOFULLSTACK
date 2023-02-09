@@ -1,0 +1,24 @@
+<div class="formlogin"> 
+    <h1>Acceso</h1>
+
+    <form action="/admin/login" method="post">
+        <div class="mb-3 row">
+            <div class="col-sm-5">
+                <input class="form-control" placeholder="Usuario" type="text" id="inputUser" name="usuario">
+            </div>
+        </div>
+
+        <div class="mb-3 row">
+            <div class="col-sm-5">
+                <input class="form-control" placeholder="Contraseña" type="password" id="inputPassword" name="password">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+    </form>
+
+    {{#if error}}
+    <p>Usuario y/o contraseña inválidos</p>
+    {{/if}}
+</div>
+
+</div>

@@ -1,0 +1,332 @@
+/* font-family: 'Open Sans', sans-serif;*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+header {
+
+    background: rgb(24,226,216);
+    background: linear-gradient(90deg, rgba(24,226,216,1) 20%, rgba(15,162,155,1) 48%, rgba(14,120,115,1) 77%);
+    padding: 16px 0;
+}
+
+
+.div-imglogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     }
+
+
+header h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+
+}
+
+
+nav {
+    background-color: #92e4e0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: rgb(37, 36, 36);
+    text-decoration: none;
+    padding: 3px 6px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a.activo {
+    background-color: #264241;
+    color: white;
+}
+
+
+.slider-frame {
+	width: 75%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+		animation: cambio 20s infinite alternate linear;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+
+
+footer {
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 20px;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #2e64a1;
+    font-weight: 400;
+}
+
+h4 {
+    color: #2e64a1;
+    font-weight: 400;
+}
+
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+
+.testimonios {
+    width: 25%;
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p {
+    font-size: 20px;
+}
+
+.testimonio {
+    background-color: rgb(4, 80, 90);
+    padding: 16px;
+
+}
+
+.testimonio .cita {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    display: block;
+    color: white
+}
+
+
+
+.testimonio .autor {
+    font-size: 10px;
+    text-align: center;
+    display: block;
+    margin: 12px 0;
+    color: white
+}
+
+.historia p {
+    font-size: 12px;
+}
+
+.personas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.persona {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+}
+
+.persona img {
+    border-radius: 50%;
+    max-width: 60%;
+    box-shadow: 0 0 5px rgba (0, 0, 0, 0.5);
+}
+
+
+.persona h6 {
+    margin: 0;
+    font-weight: normal;
+    color: #2e64a1
+}
+
+.persona h5 {
+    font-size: 14px;
+    margin-top: 5px
+}
+
+.persona h6 {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.persona p {
+    color: #666; font-size: 10px;
+}
+
+
+input, textarea, select {
+    width : 250px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  #submit {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 10px 20px 0;
+    border: 1px solid #ccc;
+    background: rgb(16, 166, 177);
+    border-radius: 8px 8px 8px 8px;
+}
+
+#submit:hover {
+    background: #ddd;
+}
+
+.servicio {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.servicio .info {
+    font-size: 13px;
+}
+
+.servicio img {
+    border-radius: 13px;
+    max-width: 225px;
+    display: block;
+}
+
+.servicio:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.galeria img{
+    width: 18%;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+
+.contacto {
+    display: flex;
+    gap: 24px;
+}
+
+.contacto div{
+    width: 100%
+}
+
+.datos p{
+    font-size: 14px;
+}
+
+.datos ul li{
+    font-size: 13px;
+}
+
+.formulario p{
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 80px;
+}
+
+.formulario p label{
+    display: flex;
+    align-items: center;
+}
+
+.formulario p:nth-child(4){
+    align-items: start;
+}
+
+.formulario textarea{
+    resize: none;
+    height: 150ox;
+}
+
+.formulario input [type="submit"] {
+background: #6da9ed;
+box-shadow: 0 0 10px rgba (0, 0, 0, 0.4);
+color: white;
+font-size: 16px;
+padding: 6px 20px;
+width: auto;
+position: relative;
+left: 5rem;
+cursor: pointer;
+}
+
+.formulario input [type="submit"]:hover {
+    background-color: #2e64a1;
+} 
+
